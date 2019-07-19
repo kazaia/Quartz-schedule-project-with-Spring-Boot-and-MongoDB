@@ -1,0 +1,23 @@
+server:
+  port: 8080
+ 
+ 
+spring:
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: localhost:27017  
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: username@gmail.com
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false      
