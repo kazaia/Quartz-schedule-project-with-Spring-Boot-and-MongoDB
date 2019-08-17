@@ -10,3 +10,5 @@ Quartz Jobs can be persisted into a database, or a cache, or in-memory. In this 
 Before we begin, open a terminal and run the following commands to ensure that you have valid versions of Java and Maven installed:
 
 ![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/01.png)
+
+![](https://ibb.co/yB8sNY2)
