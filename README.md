@@ -11,4 +11,4 @@ Before we begin, open a terminal and run the following commands to ensure that y
 
 ![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/01.png)
 
-![](https://ibb.co/yB8sNY2)
+![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/02.png)
