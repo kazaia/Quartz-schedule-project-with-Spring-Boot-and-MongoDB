@@ -12,3 +12,17 @@ Before we begin, open a terminal and run the following commands to ensure that y
 ![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/01.png)
 
 ![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/02.png)
+
+
+This project is using MongoDB as the internal persistent store. We install and use MongoDB as a job store and Robo 3T as client. 
+To test the REST API, we install Postman.
+
+## Creating the Spring Boot application 
+
+Spring Boot offers several conveniences for working with the Quartz scheduler, including the spring-boot-starter-quartz “Starter”. 
+We Bootstrap a Spring Boot application by using Spring Initializer. To do this, we will have to visit the Spring Initializer at: https://start.spring.io/ and choose your Build, Spring Boot Version and platform. Also, we need to provide a Group, Artifact and required dependencies to run the application.
+In our case: 
+•	Enter quartz-demo in the Artifact field.
+•	Add Web, JPA, MongoDB, Quartz, and Mail in the dependencies section.
+•	Click Generate Project to generate and download the project.
+
