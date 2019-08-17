@@ -26,3 +26,37 @@ In our case:
 •	Add Web, JPA, MongoDB, Quartz, and Mail in the dependencies section.
 •	Click Generate Project to generate and download the project.
 
+## Project dependencies: 
+
+For maven artifacts, add the following repository definition to your pom.xml:
+
+<repositories>
+    <repository>
+        <id>michaelklishin</id>
+        <url>https://dl.bintray.com/michaelklishin/maven/</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.novemberain</groupId>
+    <artifactId>quartz-mongodb</artifactId>
+    <version>2.1.0</version>
+</dependency>
+
+
+For Quartz, add this dependency: 
+
+<dependencies>
+	<dependency>
+		<groupId>org.quartz-scheduler</groupId>
+	        <artifactId>quartz</artifactId>
+		<version>2.3.0</version>
+	</dependency>
+
+
+## Configuring MongoDB database, Quartz Scheduler, and Mail Sender
+
+Let’s configure Quartz Scheduler, MongoDB database, and Spring Mail. MongoDB database will be used for storing Quartz Jobs, and Spring Mail will be used to send emails.
+Open src/main/resources/application.yml file and add the following properties:
+
+
