@@ -101,3 +101,7 @@ No success, if the dateTime is before current time:
 
 
 ![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/Q6.png)
+
+The mail is successfully scheduled when tested with valid data: 
+
+![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/Q7.png)
