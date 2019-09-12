@@ -64,3 +64,20 @@ Open src/main/resources/application.yml file and add the following properties:
 Create Quartz.properties under src/main/resources/quartz.properties and add the following configuration:
 
 ![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/Q2.png)
+
+Then we create a Mongo database called quartz_demo, as following:
+
+![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/Q3.png)
+
+## Creating a REST API to schedule Email Jobs dynamically in Quartz: 
+
+We create the DTO classes (Data transfer object), that contains : email, body, subject, timeZone, dateTime … etc. 
+We use proper annotations to avoid empty or null data: @NotEmpty/ @NotNull
+Then we define the controller that schedule email jobs in Quartz.  Spring Boot has built-in support for Quartz. It automatically creates a Quartz Scheduler bean with the configuration that we supplied in the application.properties file. That’s why we could directly inject the Scheduler in the controller.
+In the /scheduleEmail API, we first validate the request body. Then, build a JobDetail instance with a JobDataMap that contains the recipient email, subject, and body. The JobDetail that we create is of type EmailJob. Next, we Build a Trigger instance that defines when the Job should be executed.
+Finally, we schedule the Job using scheduler.scheduleJob() API.
+
+## Creating the Quartz Job to send emails:
+
+
+
