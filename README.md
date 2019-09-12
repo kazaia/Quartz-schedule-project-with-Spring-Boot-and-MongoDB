@@ -82,7 +82,7 @@ Finally, we schedule the Job using scheduler.scheduleJob() API.
 Let’s now define the Job that sends the actual emails. Spring Boot provides a wrapper around Quartz Scheduler’s Job interface called QuartzJobBean. This allows to create Quartz Jobs as Spring beans where you can autowire other beans.
 Let’s create our EmailJob by extending QuartzJobBean.
 
-## 9.	MongoDB collections: 
+## MongoDB collections: 
 
 When you now run the Spring Boot project with a running MongoDB instance, you will see the following collections created:
 	quartz_calendars
@@ -91,4 +91,13 @@ When you now run the Spring Boot project with a running MongoDB instance, you wi
 	quartz_schedulers
 	quartz_triggers
 
+![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/Q4.png)
 
+## Testing the REST API: 
+
+![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/Q5.png)
+
+No success, if the dateTime is before current time: 
+
+
+![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/Q6.png)
