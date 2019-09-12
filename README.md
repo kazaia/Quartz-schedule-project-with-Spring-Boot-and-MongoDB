@@ -59,4 +59,7 @@ For Quartz, add this dependency:
 Let’s configure Quartz Scheduler, MongoDB database, and Spring Mail. MongoDB database will be used for storing Quartz Jobs, and Spring Mail will be used to send emails.
 Open src/main/resources/application.yml file and add the following properties:
 
+![](https://github.com/kazaia/Quartz-schedule-project-with-Spring-Boot-and-MongoDB/blob/master/Images/Q1.png)
+
+Create Quartz.properties under src/main/resources/quartz.properties and add the following configuration:
 
